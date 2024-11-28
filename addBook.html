@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Book</title>
+    <link rel="stylesheet" href="genralCss.css">
+</head>
+<body>
+    <!-- <h1>Add Book</h1> -->
+    <ul>
+        <li><a href="addBook.html">Add Book</a></li>
+        <li><a href="issueBook.html">Issue Book</a></li>
+        <li><a href="returnBook.html">Return Book</a></li>
+        <li><a href="membership.html">Manage Membership</a></li>
+        <li><a href="Loginhtml.html">signOut</a></li>
+    </ul>
+    <form id="addBookForm">
+        <!-- Select book or movie -->
+        <label for="itemType">Select Type:</label>
+        <input type="radio" id="book" name="itemType" value="Book" checked>
+        <label for="book">Book</label>
+        <input type="radio" id="movie" name="itemType" value="Movie">
+        <label for="movie">Movie</label>
+
+        <!-- Input fields for book details -->
+        <label for="title">Title:</label>
+        <input type="text" id="title" placeholder="Enter title" required>
+
+        <label for="author">Author:</label>
+        <input type="text" id="author" placeholder="Enter author name" required>
+
+        <label for="isbn">ISBN Number:</label>
+        <input type="text" id="isbn" placeholder="Enter ISBN number" required>
+
+        <label for="publicationDate">Publication Date:</label>
+        <input type="date" id="publicationDate" required>
+
+        <button type="submit">Add Book</button>
+    </form>
+
+    <script src="js/addBook.js"></script>
+</body>
+</html>

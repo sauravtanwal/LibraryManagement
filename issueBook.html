@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>issueBook</title>
+    <link rel="stylesheet" href="genralCss.css">
+</head>
+<body>
+    <ul>
+        <li><a href="addBook.html">Add Book</a></li>
+        <li><a href="issueBook.html">Issue Book</a></li>
+        <li><a href="returnBook.html">Return Book</a></li>
+        <li><a href="membership.html">Manage Membership</a></li>
+    </ul>
+    <form id="issueForm">
+        <label for="bookName">Book Name:</label>
+        <input type="text" id="bookName" list="bookList" required>
+        <datalist id="bookList">
+            <option value="Harry Potter"></option>
+            <option value="The Hobbit"></option>
+            <option value="1984"></option>
+        </datalist>
+    
+        <label for="authorName">Author Name:</label>
+        <input type="text" id="authorName" readonly>
+    
+        <label for="issueDate">Issue Date:</label>
+        <input type="date" id="issueDate" required>
+    
+        <label for="returnDate">Return Date:</label>
+        <input type="date" id="returnDate" required>
+    
+        <button type="submit">Issue Book</button>
+    </form>
+    
+</body>
+</html>
+

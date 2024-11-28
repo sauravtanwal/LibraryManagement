@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay Fine</title>
+    <link rel="stylesheet" href="genralCss.css">
+</head>
+<body>
+    <h1>Fine Payment</h1>
+    <form id="fineForm">
+        <label for="bookName">Book Name:</label>
+        <input type="text" id="bookName" readonly>
+
+        <label for="fineAmount">Fine Amount:</label>
+        <input type="number" id="fineAmount" value="0" readonly>
+
+        <label for="finePaid">Fine Paid:</label>
+        <input type="checkbox" id="finePaid">
+
+        <label for="remarks">Remarks:</label>
+        <input type="text" id="remarks">
+
+        <button type="submit">Confirm Payment</button>
+    </form>
+    <script src="payFinejs.js"></script>
+</body>
+</html>

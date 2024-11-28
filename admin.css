@@ -1,0 +1,60 @@
+/* General Layout */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Navbar Styles */
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: #1e293b;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+ul li {
+    margin: 0 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #f1f5f9;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: color 0.3s;
+    padding: 8px 15px;
+    border-radius: 6px;
+}
+
+ul li a:hover {
+    background-color: #38bdf8;
+    color: #fff;
+}
+
+/* Content Section */
+#content {
+    margin-top: 80px; /* Space to prevent overlap with fixed navbar */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    ul {
+        flex-direction: column;
+    }
+
+    ul li {
+        margin: 10px 0;
+    }
+}

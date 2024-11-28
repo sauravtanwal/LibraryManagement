@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership Management</title>
+    <link rel="stylesheet" href="genralCss.css">
+</head>
+<body>
+    <!-- <h1>Manage Membership</h1> -->
+    <ul>
+        <li><a href="addBook.html">Add Book</a></li>
+        <li><a href="issueBook.html">Issue Book</a></li>
+        <li><a href="returnBook.html">Return Book</a></li>
+        <li><a href="membership.html">Manage Membership</a></li>
+        <li><a href="Loginhtml.html">signOut</a></li>
+    </ul>
+    <form id="membershipForm">
+        <!-- <label for="membershipType">Membership Type:</label> -->
+        <select id="membershipType" required>
+            <option value="6-months" selected>6 Months</option>
+            <option value="1-year">1 Year</option>
+            <option value="2-years">2 Years</option>
+        </select>
+
+        <label for="membershipId">Membership ID:</label>
+        <input type="text" id="membershipId" required>
+
+        <label for="action">Action:</label>
+        <select id="action" required>
+            <option value="extend">Extend Membership</option>
+            <option value="cancel">Cancel Membership</option>
+        </select>
+
+        <button type="submit">Update Membership</button>
+    </form>
+    <script src="membershipjs.js"></script>
+</body>
+</html>

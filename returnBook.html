@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Return Book</title>
+    <link rel="stylesheet" href="genralCss.css">
+</head>
+<body>
+    <!-- <h1>Return Book</h1> -->
+    <ul>
+        <li><a href="addBook.html">Add Book</a></li>
+        <li><a href="issueBook.html">Issue Book</a></li>
+        <li><a href="returnBook.html">Return Book</a></li>
+        <li><a href="membership.html">Manage Membership</a></li>
+    </ul>
+    <form id="returnForm">
+        <label for="bookName">Book Name:</label>
+        <input type="text" id="bookName" required>
+
+        <label for="authorName">Author Name:</label>
+        <input type="text" id="authorName" readonly>
+
+        <label for="serialNumber">Serial Number:</label>
+        <input type="text" id="serialNumber" required>
+
+        <label for="issueDate">Issue Date:</label>
+        <input type="date" id="issueDate" readonly>
+
+        <label for="returnDate">Return Date:</label>
+        <input type="date" id="returnDate" required>
+
+        <button type="submit">Return Book</button>
+    </form>
+    <script src="returnBook.js"></script>
+</body>
+</html>
